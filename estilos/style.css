@@ -104,3 +104,47 @@ main{
 #redes-sociais > li > a > i{
     color: var(--cor-de-destaque);
 }
+
+#detalhes{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#Skills{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-card);
+    color: var(--cor-de-destaque);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(37, 37, 37, 0.603);
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.skill > p {
+    color: var(--cor-de-fundo-inverso);
+    font-weight: bold;
+
+}
+
+#barra{
+    background-color: var(--cor-de-card-inverso);
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+}
+
+#progresso{
+    background-color: var(--cor-de-destaque);
+    border-radius: 5px;
+    height: 10px;
+}
