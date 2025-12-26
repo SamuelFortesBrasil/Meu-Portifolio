@@ -152,6 +152,7 @@ main{
 #projetos{
     border-radius: 5px;
     background-color: var(--cor-de-card);
+    box-shadow: 3px 3px 3px rgba(37, 37, 37, 0.603);
     gap: 10px;
     padding: 10px;
     margin: 10px;
