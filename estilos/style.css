@@ -183,10 +183,11 @@ main{
 }
 
 .project > img{
-    align-self: center;
-    width: 70vw;
-    height: 35vh;
-    border-radius: 10px;
+   width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 #data{
