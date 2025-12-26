@@ -59,7 +59,7 @@ header > nav > ul > li > a:hover{
 
 main{
     display: grid;
-    grid-column: auto 90vw auto;
+    grid-template-columns: auto 90vw auto;
 }
 
 #info{
