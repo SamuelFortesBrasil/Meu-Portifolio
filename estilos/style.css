@@ -1,0 +1,108 @@
+@charset "UTF-08";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor-de-destaque: #169ec4;
+    --cor-de-letras: #21CCFA;
+    --cor-de-destaque-inversa: #7A4D5C;
+    --cor-de-letras-inversa: #FA2066;
+    --cor-de-fundo: #ffffff;
+    --cor-de-fundo-inverso: #000000;
+    --cor-de-card: #ebebeb;
+    --cor-de-card-inverso: #252525;
+}
+
+header{
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-de-card);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header > h1{
+    font-size: 2.3em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+header > nav > ul{
+    list-style: none;
+    font-size: 1.3em;
+    display: flex;
+    margin: 18px; 
+    gap: 5px;
+}
+
+header > nav > ul > li > a{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.7s ease;
+}
+
+header > nav > ul > li > a:hover{
+    background-color: var(--cor-de-letras);
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    grid-column: auto 90vw auto;
+}
+
+#info{
+    background-color: var(--cor-de-card);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    box-shadow: 3px 3px 3px rgba(37, 37, 37, 0.603);
+}
+
+#info > article > img{
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid var(--cor-de-card);
+  outline: 3px solid var(--cor-de-destaque);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#info > article > h2{
+    color: var(--cor-de-destaque);
+}
+
+#info > article > p{
+    text-align: justify;
+}
+
+#redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    font-size: 2.3em;
+    gap: 10px;
+    padding: 10px;
+    list-style: none;
+}
+
+#redes-sociais > li > a > i{
+    color: var(--cor-de-destaque);
+}
