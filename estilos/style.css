@@ -173,13 +173,14 @@ main{
     gap: 10px;
     border-radius: 5px;
     text-align: justify;
-    box-shadow: inset 6px 0px 0px var(--cor-de-destaque);
-    transition: box-shadow 0.4s, padding 0.5s ease;
+    border-left: 6px solid var(--cor-de-destaque);
+    transition: border 0.7s ease;
 }
 
 .project:hover{
-    box-shadow: inset 9px 0px 0px var(--cor-de-letras);
-    padding: 20px;
+    border-left-width: 18px ;
+    border-left-color: var(--cor-de-letras);
+    cursor: pointer;
 }
 
 .project > img{
@@ -190,6 +191,76 @@ main{
   overflow: hidden;
 }
 
-#data{
+.data{
     font-weight: bold;
 }
+
+
+#formacoes{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--cor-de-card);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(37, 37, 37, 0.603);
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+#formacoes > h2{
+    color: var(--cor-de-destaque);
+}
+
+.formacao{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo);
+    border-radius: 8px;
+    border-left: 6px solid var(--cor-de-destaque);
+    line-height: 1.5em;
+    margin: 10px;
+    padding: 10px;
+    transition: border 0.5s ease;
+}
+
+.formacao:hover{
+    cursor: pointer;
+    border-left-width: 15px ;
+    
+}
+
+abbr{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor-de-card);
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer > h4{
+    color: var(--cor-de-destaque);
+    margin: 2px;
+}
+
+footer > p{
+    margin: 5px;
+    font-weight: bold;
+}
+
+footer > p > a{
+    text-decoration: none;
+}
+
+#dev{
+    text-align: center;
+}
+
+
+#recado{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
