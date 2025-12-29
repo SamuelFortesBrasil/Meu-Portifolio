@@ -264,3 +264,50 @@ footer > p > a{
     font-weight: normal;
 }
 
+
+@media screen and (min-width:992px) {
+    main{
+        grid-template-columns: 300px 1fr 1fr auto ;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #info{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        font-size: 1.2em;
+
+    }
+
+    #detalhes{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: -1;
+    }
+
+    .project{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+   .project > img{
+        width: 40%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 5px;
+        overflow: hidden;
+        order: 2;
+    }
+
+    .data{
+        align-self: flex-end;
+    }
+    
+    .project > details{
+        align-self: flex-end;
+    }
+}
