@@ -197,6 +197,8 @@ main{
 
 
 #formacoes{
+    display: flex;
+    flex-direction: column-reverse;
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: var(--cor-de-card);
@@ -208,6 +210,7 @@ main{
 }
 
 #formacoes > h2{
+    order: 1;
     color: var(--cor-de-destaque);
 }
 
